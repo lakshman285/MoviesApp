@@ -70,7 +70,7 @@ const MovieDetails = ({route}) => {
               <Text style={styles.movieItemDetailsText}>Genre:</Text>
               {!Utils.isEmpty(movieDetails.genres) &&
                 movieDetails.genres.map((item, key) => {
-                  return <Text>{item.name}</Text>;
+                  return <Text key={key}>{item.name}</Text>;
                 })}
               <Text style={styles.movieItemDetailsText}>
                 Popularity:
