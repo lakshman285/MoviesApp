@@ -101,7 +101,7 @@ const Movies = () => {
   return (
     <View style={styles.container}>
       <View style={styles.popularMoviesTextContainer}>
-        <Text style={styles.popularMoviesText}>Popular Movies</Text>
+        <Text style={styles.popularMoviesText}>Home</Text>
       </View>
       <View style={styles.flatListView}>
         <FlatList

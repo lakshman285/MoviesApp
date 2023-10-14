@@ -5,4 +5,5 @@ export const colors = {
   headerText: 'black',
   white: 'white',
   black: 'black',
+  secondaryTextColor: '#B0B0B0',
 };
