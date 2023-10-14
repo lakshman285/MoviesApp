@@ -52,7 +52,7 @@ const MovieDetails = ({route}) => {
         </View>
       ) : (
         !Utils.isEmpty(movieDetails) && (
-          <ScrollView style={styles.scrollViewContainer}>
+          <ScrollView contentContainerStyle={styles.scrollViewContainer}>
             <View style={styles.movieDetailsView}>
               {!Utils.isEmpty(movieDetails.backdrop_path) && (
                 <Image
@@ -69,7 +69,7 @@ const MovieDetails = ({route}) => {
               <Text style={styles.movieItemTitle}>{movieDetails.title}</Text>
               <Text style={styles.movieItemDetailsText}>Genre:</Text>
               {!Utils.isEmpty(movieDetails.genres) &&
-                movieDetails.genres.map(item => {
+                movieDetails.genres.map((item, key) => {
                   return <Text>{item.name}</Text>;
                 })}
               <Text style={styles.movieItemDetailsText}>

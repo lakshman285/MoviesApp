@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     color: colors.secondaryTextColor,
   },
   indicatorView: {justifyContent: 'center'},
-  scrollViewContainer: {marginTop: 12},
+  scrollViewContainer: {marginTop: 12, paddingBottom: 56},
   movieDetailsView: {backgroundColor: colors.white, padding: 16},
 });
 export default styles;
